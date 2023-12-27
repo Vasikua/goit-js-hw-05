@@ -1,7 +1,9 @@
-Напиши стрілочну функцію getUserNames(users), яка прийматиме один параметр users — масив об’єктів користувачів. Функція має повертати масив імен усіх користувачів (властивість name) із масиву users.
 
-Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
-
+let names = getUserNames((users) => {
+console.log( users.map((user) => user.name ))
+})
+   
+   
 console.log(
   getUserNames([
   {
@@ -42,13 +44,3 @@ console.log(
 ])
 ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
 
-
-
-Залиш цей код для перевірки ментором.
-
-На що буде звертати увагу ментор при перевірці:
-Оголошена змінна getUserNames
-Змінній getUserNames присвоєна стрілочна функція з параметром (users).
-Для перебирання параметра users використовується метод map()
-Виклик функції із зазначеним масивом користувачів повертає масив ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
-Виклик функції з випадковими, але валідними аргументами повертає правильне значення
